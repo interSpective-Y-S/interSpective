@@ -1,0 +1,62 @@
+
+.retro-menu{
+    display: flex;
+    justify-content: space-evenly;
+    border-bottom: 1px solid black;
+    padding: 15px;
+}
+
+.retro-menu div{
+    color: black;
+    padding: 70px;
+    font-size: 20px;
+}
+
+.right-menu{
+    cursor: pointer;
+    background-image: url('../images/postit-unslc.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: -55px;
+}
+
+.border-none{
+    border-bottom: none;
+}
+
+.aside-right{
+    width: 100%;
+}
+
+.selected{
+    font-weight: 600;
+    background-image: url('../images/postit-selected.png');
+}
+
+.retro-input-menu{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.retro-input-menu input{
+    border: 1px solid black;
+}
+
+.retro-button{
+    padding: 15px;
+    background-color: #f1a501;
+    color: #fdfbfc;
+    border: none;
+    border-radius: 10px;
+    transition: 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.6);
+}
+
+.retro-button:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 0.6s ease;
+}

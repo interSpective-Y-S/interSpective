@@ -1,0 +1,12 @@
+.user-info div:first-child{
+    font-size: 12px;
+}
+
+.user-info div:last-child {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.card-size{
+    width: 50px;
+}
