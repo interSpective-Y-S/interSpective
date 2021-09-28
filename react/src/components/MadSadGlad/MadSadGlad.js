@@ -3,6 +3,7 @@ import Navbar from '../Navbar'
 import '../../assets/css/info.css'
 import InfoPic from '../../assets/images/info.png'
 import InfoCards from './MsgCard'
+import { Link } from 'react-router-dom'
 
 const Info = () => {
     return (
@@ -73,9 +74,11 @@ const Info = () => {
                 </div>
 
                 <div className="info-bottom-button">
+                <Link to="choose-retro">
                     <div className="info-button scale">
                         Mad Sad Glad Yarat
                     </div>
+                </Link>
                 </div>
         </div>
 

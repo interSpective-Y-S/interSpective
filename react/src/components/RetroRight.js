@@ -21,12 +21,13 @@ const RetroTypeCardText = () => {
 
     { menu ?   
         
-        <input type="text" placeholder="Retro Numarası Giriniz." />
+        <input type="text" placeholder="Retro Numarası" />
       
      :
-
-      <input type="text" placeholder="Oda İsmi Giriniz." />
-
+      <div className = "retro-olustur">
+        <input type="text" placeholder="Oda İsmi" />
+        <input type="text" placeholder="Maximum Kullanıcı Sayısı" />
+      </div>
     }
 
     <div className="retro-button">

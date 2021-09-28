@@ -47,7 +47,7 @@ const CreateRetro = () => {
         <div className="retro-page">
             
             <div className="retro-navbar">
-                <img src={logo} alt="Logo" width="250px" />
+                <img src={logo} alt="Logo" width="300px" />
                 <Timer />
             </div>
 

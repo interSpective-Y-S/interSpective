@@ -3,6 +3,7 @@ import '../assets/css/lean.css'
 import Navbar from './Navbar'
 import LeanPic from '../assets/images/lean.png'
 import LeanPic2 from '../assets/images/lean2.png'
+import { Link } from 'react-router-dom'
 
 const LeanCoffee = () => {
     return (
@@ -45,7 +46,11 @@ const LeanCoffee = () => {
                             ardından bunları tartışma sırasında üç sütunun her birinde taşıyarak ekibin performansı üzerinde olumlu bir 
                             etkisi olması muhtemel konu fikirlerine odaklanmasına yardımcı olur.
                         </div>
-                        <div className="info-button scale">Lean Coffee Retrospective Yarat</div>
+                            <Link to = "choose-retro">
+                                <div className="info-button scale">
+                                    Lean Coffee Retrospective Yarat
+                                </div>
+                            </Link>
                     </div>
                     <div className="lean-mid-right">
                         <img src={LeanPic2} alt="LeanCoffee2" />

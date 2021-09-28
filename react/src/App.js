@@ -8,6 +8,7 @@ import Urunler from './components/Urunler/Urunler'
 import MadSadGlad from './components/MadSadGlad/MadSadGlad'
 import LeanCoffee from './components/LeanCoffee'
 import CreateRetro from './components/RetroPage/CreateRetro'
+import RetroChoose from './components/RetroChoose'
 
 function App() {
   return (
@@ -30,6 +31,8 @@ function App() {
     <Route path='/join-retro:id' component={JoinRetro} />
 
     <Route path="/retro" component={CreateRetro} />
+
+    <Route path="/choose-retro" component={RetroChoose} />
 
     </Router>
 
