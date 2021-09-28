@@ -1,0 +1,22 @@
+.timer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    border-radius: 15px;
+}
+
+.timer> :first-child {
+    display: flex;
+    margin-right: 15px;
+}
+
+.timer img {
+    width: 30px;
+}
+
+.timer> :last-child {
+    font-size: 24px;
+}

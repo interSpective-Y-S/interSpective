@@ -1,0 +1,92 @@
+.urunler-container{
+    min-height: 100vh;
+    background-image: url('../images/urunler.png');
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: 630px -120px;
+}
+
+.urunler-content{
+    min-height: calc(100vh - 135px);
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding: 25px 0;
+}
+
+.urunler-card{
+    display: flex;
+    gap: 25px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.urunler-search{
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-wrapper{
+    width: 400px;
+    height: 570px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 0 40px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
+}
+
+.search-title{
+    font-size: 36px;
+    font-weight: 700;
+    color: #181e4b;
+    background-image: url('../images/urun-search.png');
+    background-repeat: no-repeat;
+    background-size: 96%;
+    background-position: 107px 5px;
+    padding: 0 55px;
+}
+
+.search-text{
+    display: flex;
+    flex-direction: column;
+    font-size: 26px;
+    padding: 0 30px;
+    font-weight: 600;
+    color: #5e6282;
+}
+
+.search-bar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.search-bar input{
+    width: 250px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
+}
+
+.search-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 60px;
+    background-color: #f1a501;
+    border-radius: 10px 5px 5px 10px;
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+}
+
+.search-icon img{
+    width: 40px;
+}

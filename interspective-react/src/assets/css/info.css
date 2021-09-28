@@ -1,0 +1,93 @@
+.info-page{
+    background-image: url('../images/info-back.png');
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: 790px -260px;
+}
+
+.info-container{
+    min-height: 100vh;
+    margin: 0 3%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.info-top{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 300px;
+}
+
+.info-top-right img{
+    width: 500px;
+}
+
+.info-top-left-title{
+    font-size: 34px;
+    font-weight: 700;
+    color: #181e4b;
+}
+
+.info-top-left-text{
+    margin-top: 12px;
+    display: flex;
+    font-size: 18px;
+    flex-direction: column;
+    gap: 15px;
+    font-weight: 600;
+    padding: 0 10px;
+}
+
+.info-list{
+    display: flex;
+    flex-direction: column;
+}
+
+.info-mid{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.info-mid-title{
+    padding: 20px;
+    font-size: 28px;
+    color: #181e4b;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.info-bottom{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.info-bottom-cards{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+.info-bottom-button{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-button{
+    color: #fdfcfb;
+    text-align: center;
+    padding: 15px;
+    width: 400px;
+    border-radius: 10px;
+    background-color: #f1a501;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+    box-shadow: 0 2px 7px rgba(0, 0, 0, 0.6);
+}

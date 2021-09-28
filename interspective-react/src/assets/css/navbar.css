@@ -1,0 +1,48 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px 20px;
+    z-index: 5;
+}
+
+.menu{
+    z-index: 5;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    gap: 55px;
+    color: #181e4b;
+    font-size: 24px;
+    font-weight: 600;
+    margin-right: 20px;
+}
+
+.menu span:hover{
+    cursor: pointer;
+    color: #feae01;
+    transition: 0.40s ease;
+}
+
+.logo img{
+    width: 400px;
+}
+
+.login{
+    border: 1px solid #f1a501;
+    border-radius: 10px;
+    padding: 5px 15px;
+    background-color: #f1a501;
+    color: #fbfdfc;
+    transition: 0.2s ease;
+}
+
+.login:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 0.2s ease;
+}
+
+a{
+    color: #181e4b;
+}

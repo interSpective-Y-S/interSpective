@@ -1,0 +1,123 @@
+.login-wrapper{
+    background-color: #ffffff;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100vh;
+    width: 100vw;
+}
+
+.login-left{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.login-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #75b987;
+    border-radius: 45px 0 0 45px;
+    gap: 40px;
+}
+
+input[type="text"],
+input[type="password"] {
+    border: none;
+    width: 330px;
+    height: 30px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.text{
+    color: #fbfdfc;
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.login-button{
+    height: 50px;
+    width: 150px;
+    background-color: #f1a501;
+    border-radius: 10px;
+    border: none;
+    font-size: 20px;
+    transition: 0.3s ease;
+    color: #fbfdfc;
+}
+
+.login-left a{
+    margin-top: 40px;
+}
+
+.login-button:hover{
+    transform: scale(1.1);
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.login-image{
+    width: 750px;
+    margin-bottom: 3px;
+}
+
+.left-text{
+    font-weight: 600;
+    font-size: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-container form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 25px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+}
+
+.check{
+    display: flex;
+    justify-content: center;
+    color: #fbfdfc;
+    align-self: flex-start;
+}
+
+.check input{
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+    
+    background-color: #fbfdfc;
+}
+
+.check input:hover{
+    cursor: pointer;
+}
+
+.password-area{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.password-area span{
+    color: #fbfdfc;
+    text-decoration: underline;
+    font-size: 14px;
+}
+
+.password-area span:hover{
+    cursor: pointer;
+    transition: 0.40s ease;
+    color: #f1a501;
+}

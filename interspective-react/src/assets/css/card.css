@@ -1,0 +1,24 @@
+.card-wrapper{
+    display: flex;
+    padding: 15px;
+    border-radius: 15px;
+    width: 50%;
+    font-size: 16px;
+    justify-content: space-between;
+    transition: 1s ease;
+}
+
+.card-wrapper:first-child{
+    margin-top: 20px;
+}
+
+.photo{
+    width: 50px;
+    height: 50px;
+    background-color: #fdfbfc;
+    border-radius: 50%;
+}
+
+.card-wrapper img{
+    cursor: pointer;
+}

@@ -1,0 +1,18 @@
+.myretro{
+    cursor: default !important;
+    font-size: 32px !important;
+    font-weight: 700;
+    letter-spacing: 3px;
+    padding: 20px !important;
+}
+
+.retrolist{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.padzero{
+    padding: 0 !important;
+}

@@ -1,0 +1,29 @@
+.retro-container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../images/retro-back.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 60%;
+    background-position: 980px -120px;
+}
+
+.retro-wrapper{
+    width: 1100px;
+    height: 516px;
+    display: flex;
+    border-radius: 5px;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.6);
+}
+
+.card{
+    width: 100%;
+    display: flex;
+    justify-content: center;  
+}
+
+.card:first-child{
+    border-right: 2px solid rgba(0, 0, 0, 0.6);
+}
