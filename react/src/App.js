@@ -10,6 +10,7 @@ import StartStopContinue from './components/StartStopContinue/StartStopContinue'
 import LeanCoffee from './components/LeanCoffee'
 import CreateRetro from './components/RetroPage/CreateRetro'
 import RetroChoose from './components/RetroChoose'
+import WhatWentWell from './components/WhatWentWell/WhatWentWell'
 
 function App() {
   return (
@@ -36,6 +37,8 @@ function App() {
     <Route path="/choose-retro" component={RetroChoose} />
 
     <Route path="/start-stop-continue" component={StartStopContinue} />
+
+    <Route path="/what-went-well" component={WhatWentWell} />
 
     
     </Router>

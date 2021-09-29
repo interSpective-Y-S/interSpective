@@ -41,7 +41,7 @@ const Urunler = () => {
                     text="Retrospektif, ekiplerin iyileştirme yollarını inceleme fırsatı olduğu için çevik metodolojide hayati bir rol oynar. Bu amaca ulaşmanın en basit yollarından biri, ürün ve yazılım geliştirme ekiplerine iki soru sormaktır - ne iyi gitti, ne iyi gitmedi?
 Neyin iyi gittiği, neyin iyi gitmediği tekniği, ekiplerin önceki yineleme üzerindeki faaliyetlerine ve sürekli iyileştirmeyi sağlamak için verimliliklerini ve üretkenliklerini nasıl artırabileceklerine odaklanmasını sağlar."
                     img={Image3}
-                    to={null}
+                    to="what-went-well"
                     />
                 </div>
                 <div className="urunler-search">
