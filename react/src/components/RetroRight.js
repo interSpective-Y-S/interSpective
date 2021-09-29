@@ -1,5 +1,6 @@
 import { useState, React } from "react";
 import '../assets/css/retrocard.css'
+import { Link } from 'react-router-dom'
 
 const RetroTypeCardText = () => {
 
@@ -10,7 +11,7 @@ const RetroTypeCardText = () => {
   }
 
   return (
-    
+  
     <div className="aside-right">
       <div className="retro-menu border-none">
         <div onClick={handleMenu} className={ "right-menu " + (menu ? "" : "selected")} >Retro Oluştur</div>
@@ -30,12 +31,20 @@ const RetroTypeCardText = () => {
       </div>
     }
 
-    <div className="retro-button">
-      {menu ? "Odaya Katıl" : "Oda Oluştur"}  
-    </div>    
+    <div className="retro-menu-buttons">
+      <Link to ="retro">
+        <div className="retro-button">
+          {menu ? "Odaya Katıl" : "Oda Oluştur"}  
+        </div>
+      </Link>
 
+      <Link to="">
+        <div>
+          <span> ana ekran </span>
+        </div>   
+      </Link>
+      </div>
     </div>
-
     </div>
   )
 }

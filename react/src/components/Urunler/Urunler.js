@@ -19,7 +19,7 @@ const Urunler = () => {
                     title="Start, Stop, Continue" 
                     text="Başla, Bırak ve Devam Et, basit ancak etkili bir retrospektif yöntemidir. Yöntem kapsamında beyaz tahta ya da boş bir duvar üç sütuna bölünerek Başla, Bırak ve Devam Et olarak adlandırılır. Başla, gelecek sprint’te takımın yapmaya başlayacakları; bırak, işe yaramadığı ya da sonlandırılması gerektiği düşünülenler; Devam Et ise geçmiş sprint’lerde işe yarayan, vazgeçilemeyenlerdir."
                     img={Image1}
-                    to={null}
+                    to="/start-stop-continue"
                     />
 
                     <UrunCard 

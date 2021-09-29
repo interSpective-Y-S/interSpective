@@ -6,6 +6,7 @@ import RetroType from './components/RetroType'
 import JoinRetro from './components/JoinRetro'
 import Urunler from './components/Urunler/Urunler'
 import MadSadGlad from './components/MadSadGlad/MadSadGlad'
+import StartStopContinue from './components/StartStopContinue/StartStopContinue'
 import LeanCoffee from './components/LeanCoffee'
 import CreateRetro from './components/RetroPage/CreateRetro'
 import RetroChoose from './components/RetroChoose'
@@ -34,6 +35,9 @@ function App() {
 
     <Route path="/choose-retro" component={RetroChoose} />
 
+    <Route path="/start-stop-continue" component={StartStopContinue} />
+
+    
     </Router>
 
     </div>

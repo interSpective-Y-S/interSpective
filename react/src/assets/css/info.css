@@ -5,6 +5,13 @@
     background-position: 790px -260px;
 }
 
+.info-page2{
+    background-image: url('../images/bak-ssc.png');
+    background-size: 120%;
+    background-repeat: no-repeat;
+    background-position: -100px -320px;
+}
+
 .info-container{
     min-height: 100vh;
     margin: 0 3%;
@@ -19,8 +26,15 @@
     gap: 300px;
 }
 
+
 .info-top-right img{
     width: 500px;
+}
+
+.info-top-right-ssc img{
+    width: 600px;
+    height: 600px;
+    background-position: -100px -380px;
 }
 
 .info-top-left-title{
@@ -29,10 +43,31 @@
     color: #181e4b;
 }
 
+.info-top-left-title-ssc{
+    margin-top: 70px;
+    font-size: 34px;
+    font-weight: 700;
+    color: #181e4b;
+    padding-bottom: 20px;
+}
+
+
+
+
 .info-top-left-text{
     margin-top: 12px;
     display: flex;
     font-size: 18px;
+    flex-direction: column;
+    gap: 15px;
+    font-weight: 600;
+    padding: 0 10px;
+}
+
+.info-top-left-text-ssc{
+    margin-top: 12px;
+    display: flex;
+    font-size: 22px;
     flex-direction: column;
     gap: 15px;
     font-weight: 600;

@@ -5,7 +5,7 @@ import MyRetro from './MyRetro'
 const RetroType = () => {
 
   return (
-
+    <div className="back">
     <div className="retro-container">
       <div className="retro-wrapper">
           <div className="card">
@@ -20,7 +20,7 @@ const RetroType = () => {
           </div>
       </div>
     </div>
-
+    </div>
   )
 
 }
