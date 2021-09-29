@@ -10,6 +10,10 @@ const RetroTypeCardText = () => {
     setMenu(!menu)
   }
 
+  const func_isim = () => {
+    
+  }
+
   return (
   
     <div className="aside-right">
@@ -33,16 +37,12 @@ const RetroTypeCardText = () => {
 
     <div className="retro-menu-buttons">
       <Link to ="retro">
-        <div className="retro-button">
+        <div className="retro-button" onClick = "this.func_isim">
           {menu ? "Odaya Katıl" : "Oda Oluştur"}  
         </div>
       </Link>
 
-      <Link to="">
-        <div>
-          <span> ana ekran </span>
-        </div>   
-      </Link>
+  
       </div>
     </div>
     </div>
