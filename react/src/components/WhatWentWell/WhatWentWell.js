@@ -121,7 +121,7 @@ const WhatWentWell = () => {
                         </div>
 
                         <div className="info-bottom-button-www">
-                        <Link to="choose-retro">
+                        <Link to="choose-retro-www">
                             <div className="info-button scale">
                                 What Went Well Yarat
                             </div>

@@ -74,7 +74,7 @@ const Info = () => {
                 </div>
 
                 <div className="info-bottom-button">
-                <Link to="choose-retro">
+                <Link to="choose-retro-msg">
                     <div className="info-button scale">
                         Mad Sad Glad Yarat
                     </div>

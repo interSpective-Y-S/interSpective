@@ -46,7 +46,7 @@ const LeanCoffee = () => {
                             ardından bunları tartışma sırasında üç sütunun her birinde taşıyarak ekibin performansı üzerinde olumlu bir 
                             etkisi olması muhtemel konu fikirlerine odaklanmasına yardımcı olur.
                         </div>
-                            <Link to = "choose-retro">
+                            <Link to = "choose-retro-lc">
                                 <div className="info-button scale">
                                     Lean Coffee Retrospective Yarat
                                 </div>

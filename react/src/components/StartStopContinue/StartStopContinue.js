@@ -76,7 +76,7 @@ const StartStopContinue = () => {
                     <div className="lean-mid-right">
                         <div className="ssc-bot-back">
                         <img src={LeanPic2} alt="LeanCoffee2" />
-                        <Link to = "choose-retro">
+                        <Link to = "choose-retro-ssc">
                                 <div className="info-button scale">
                                     Start Stop Continue Yarat
                                 </div>

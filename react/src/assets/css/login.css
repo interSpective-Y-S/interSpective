@@ -143,3 +143,9 @@ input[type="password"] {
     transition: 0.40s ease;
     color: #f1a501;
 }
+
+.choose-mid{
+    display: flex;
+    flex-direction: row;
+}
+

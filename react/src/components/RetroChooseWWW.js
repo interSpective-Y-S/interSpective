@@ -7,14 +7,14 @@ import pic from '../assets/images/trans-r-pic.png'
 import { Link } from 'react-router-dom'
 import MyRetro from './MyRetro'
 import RetroRight from './RetroRight'
-import RetroChooseTrans from './RetroChooseTrans'
+import RetroChooseTransWWW from './RetroChooseTransWWW'
 
-const RetroChoose = () => {
+const RetroChooseWWW = () => {
     return (
         <div className="retro-container2">
             <div className="retro-wrapper2">
                 <div className="card">
-                    <RetroChooseTrans />
+                    <RetroChooseTransWWW />
                 </div>
 
                 <div className="info-right-trans">
@@ -25,4 +25,4 @@ const RetroChoose = () => {
     )
 }
 
-export default RetroChoose
+export default RetroChooseWWW

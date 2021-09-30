@@ -19,21 +19,21 @@ const Urunler = () => {
                     title="Start, Stop, Continue" 
                     text="Başla, Bırak ve Devam Et, basit ancak etkili bir retrospektif yöntemidir. Yöntem kapsamında beyaz tahta ya da boş bir duvar üç sütuna bölünerek Başla, Bırak ve Devam Et olarak adlandırılır. Başla, gelecek sprint’te takımın yapmaya başlayacakları; bırak, işe yaramadığı ya da sonlandırılması gerektiği düşünülenler; Devam Et ise geçmiş sprint’lerde işe yarayan, vazgeçilemeyenlerdir."
                     img={Image1}
-                    to="/start-stop-continue"
+                    to="/info-start-stop-continue"
                     />
 
                     <UrunCard 
                     title="Mad Sad Glad"
                     text="Bu retrospective tekniği takım üyelerinin duygu durumları etrafında tartışmayı çerçeveleyen, oldukça etkili bir yöntemdir. Geçen sprintte takımın moralini ve iş memnuniyetini iyileştirme fırsatı sunar. Fasilitator katılımcılardan, gerçekleşen olaylardan ziyade, nasıl hissetiklerini paylaşmalarını ister"
                     img={Image2}
-                    to="/madsadglad"
+                    to="/info-mad-sad-glad"
                     />
 
                     <UrunCard 
                     title="Lean Coffee"
                     text="Ekibin tartışmak istedikleri konuları tanımlamasına ve oylamasına olanak tanır. Bu işbirlikçi, meraklı bir ekip kültürü oluşturmak için harikadır.Bu nedenle, geriye dönük olarak tüm katılımcıların aktif olması sağlanır. Ekiplerinizin kendi kendini organize etme becerilerini geliştirmek için harikadır. Anlaşılması gereken şey, bir Yalın Kahve'de temelde üç farklı konuşma aşaması olduğudur; tartışılacak şeyler, tartışılan şeyler ve tartışılan şeyler."
                     img={Image4}
-                    to="/leancoffee"
+                    to="/info-lean-coffee"
                     />
 
                     <UrunCard 
@@ -41,7 +41,7 @@ const Urunler = () => {
                     text="Retrospektif, ekiplerin iyileştirme yollarını inceleme fırsatı olduğu için çevik metodolojide hayati bir rol oynar. Bu amaca ulaşmanın en basit yollarından biri, ürün ve yazılım geliştirme ekiplerine iki soru sormaktır - ne iyi gitti, ne iyi gitmedi?
 Neyin iyi gittiği, neyin iyi gitmediği tekniği, ekiplerin önceki yineleme üzerindeki faaliyetlerine ve sürekli iyileştirmeyi sağlamak için verimliliklerini ve üretkenliklerini nasıl artırabileceklerine odaklanmasını sağlar."
                     img={Image3}
-                    to="what-went-well"
+                    to="/info-what-went-well"
                     />
                 </div>
                 <div className="urunler-search">

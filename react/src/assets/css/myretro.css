@@ -16,3 +16,15 @@
 .padzero{
     padding: 0 !important;
 }
+
+.choose-ret-left{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-left: 30px;
+    
+}
+.retro-input-menu input{
+    border: 1px solid black;
+}
