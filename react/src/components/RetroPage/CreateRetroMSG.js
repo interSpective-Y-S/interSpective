@@ -52,24 +52,20 @@ const CreateRetroMSG = () => {
     }
     const users = [
         {
-            name: "Ahmet",
-            role: "Eng"
+            name: "Özlem",
+            role: "Scrum Master"
         },
         {
-            name: "Ahmet2",
-            role: "Eng"
+            name: "İlker",
+            role: "Product Owner"
         },
         {
-            name: "Ahmet3",
-            role: "Eng"
+            name: "Sema",
+            role: "Business analytics"
         },
         {
-            name: "Ahmet4",
-            role: "Eng"
-        },
-        {
-            name: "Ahmet5",
-            role: "Eng"
+            name: "Göksel",
+            role: "Developer"
         },
     ]
 
