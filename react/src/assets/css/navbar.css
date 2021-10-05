@@ -22,7 +22,35 @@
     cursor: pointer;
     color: #feae01;
     transition: 0.40s ease;
+    
 }
+
+.menu2{
+    z-index: 5;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    gap: 55px;
+    color: #181e4b;
+    font-size: 24px;
+    font-weight: 600;
+    margin-right: 20px;
+}
+
+.menu2 span:hover{
+    cursor: pointer;
+    color: #feae01;
+    transition: 0.40s ease;
+    transform: translate3d(-2px, -1px, 0);
+}
+
+.kapat span:hover{
+    cursor: pointer;
+    color: #feae01;
+    transition: 0.40s ease;
+    transform: translate3d(-2px, -1px, 0);
+}
+
 
 .logo img{
     width: 400px;

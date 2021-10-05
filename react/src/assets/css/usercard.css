@@ -9,6 +9,10 @@
     font-weight: 600;
     margin-bottom: 20px;
 }
+.pic img{
+    width: 80px;
+    border-radius: 5ch;
+}
 
 .card-size{
     width: 50px;

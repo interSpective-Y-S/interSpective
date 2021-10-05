@@ -16,7 +16,7 @@ const RetroChooseTransSSC = () => {
 
         <div className="retro-input-menu "> 
             <div className="choose-ret-left">
-                <input type="text" placeholder="Oda İsmi" />
+                <input name="room" type="text" placeholder="Oda İsmi" />
                 <Link className="card-button2 scale" to="start-stop-continue"> 
                     <div >Start Stop Continue Oluştur</div>
                 </Link>

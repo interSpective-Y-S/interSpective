@@ -8,6 +8,10 @@ import UserCard from './UserCard'
 import MainCard from './MainCard'
 import Timer from './Timer'
 import { Link } from 'react-router-dom'
+import ıs from '../../assets/images/ıs.png'
+import icon1 from '../../assets/images/çan.png'
+import icon2 from '../../assets/images/çark.png'
+import icon3 from '../../assets/images/saat.png'
 
 const CreateRetroLC = () => {
 
@@ -16,6 +20,12 @@ const CreateRetroLC = () => {
     const [madList, setMadList] = useState([])
     const [gladList, setGladList] = useState([])
 
+    const startTime = () => {
+        const clock = "1";
+        
+    }
+
+    
     useEffect(() => {
         const fetchData = async () => {
             var response = await fetch("http://localhost:8080/madsadglad/5")
@@ -52,22 +62,28 @@ const CreateRetroLC = () => {
         .then(dat => console.log(dat))
 
     }
+    
     const users = [
         {
             name: "Özlem",
-            role: "Scrum Master"
+            role: "Scrum Master",
+            src: "./özlem.png"
         },
         {
             name: "İlker",
-            role: "Product Owner"
+            role: "Product Owner",
+            src: "./ilker.png"
         },
         {
             name: "Sema",
-            role: "Business analytics"
+            role: "Business analytics",
+            src: "./sema.png"
         },
         {
+            
             name: "Göksel",
-            role: "Developer"
+            role: "Developer",
+            src: "./goksel.png"
         },
     ]
 
@@ -75,7 +91,7 @@ const CreateRetroLC = () => {
         let usercards = []
 
         for (let index = 0; index < users.length; index++) {
-            usercards.push(<UserCard name={users[index].name} role={users[index].role}/>)
+            usercards.push(<UserCard name={users[index].name} role={users[index].role} src={users[index].src}/>)
         }
 
         return usercards
@@ -93,7 +109,7 @@ const CreateRetroLC = () => {
                 <div className="aside">
                     <div className="aside-top">
                         <div>
-                            <img src={team} alt="Team" />
+                            <img src={ıs} alt="Team" /> 
                         </div>
                         <div className="aside-top-right">
                             <div>Takım</div>
@@ -175,9 +191,10 @@ const CreateRetroLC = () => {
                 <div className= "lala">
         <div className="bottom-bar">
             <div className="icons">
-                <span>a</span>
-                <span>b</span>
-                <span>c</span>
+            <img className = "icon1" src={icon1} alt="icon" />
+                <img className = "icon2" src={icon2} alt="icon"/>
+                <img className = "icon3" src={icon3} alt="icon" onClick={() => startTime()}/>
+                
             </div>
             <div className="menu">
                 <span>Düşün</span>

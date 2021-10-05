@@ -3,13 +3,14 @@ import clock from '../../assets/images/clock.svg'
 import '../../assets/css/timer.css'
 
 export default class Timer extends React.Component {
-    constructor() {
+    constructor({clock}) {
         super();
         this.state = {
             time: {},
             seconds: 90
         };
-        this.countUp = this.countDown.bind(this);
+        if(clock == "1")
+            this.countUp = this.countDown.bind(this);
     }
 
     secondsToTime(secs) {

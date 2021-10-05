@@ -1,9 +1,13 @@
 import React, {useEffect, useState} from 'react'
 import { Link } from 'react-router-dom'
 import logo from '../../assets/images/logo.png'
+import icon1 from '../../assets/images/çan.png'
+import icon2 from '../../assets/images/çark.png'
+import icon3 from '../../assets/images/saat.png'
 import mail from '../../assets/images/mail.png'
 import link from '../../assets/images/link.png'
 import team from '../../assets/images/team.png'
+import ıs from '../../assets/images/ıs.png'
 import '../../assets/css/createretro.css'
 import UserCard from './UserCard'
 import MainCard from './MainCard'
@@ -12,8 +16,12 @@ import '../../assets/css/info.css'
 import NavBottom from '../NavBottom'
 
 
-const CreateRetroSSC = () => {
 
+
+
+const CreateRetroSSC = () => {
+    
+    var clock = "0"
     const [retro, setRetro] = useState({})
     const [sadList, setSadList] = useState([])
     const [madList, setMadList] = useState([])
@@ -55,23 +63,34 @@ const CreateRetroSSC = () => {
         .then(dat => console.log(dat))
     }
 
+    const startTime = () => {
+        const clock = "1";
+        
+    }
+
+    console.log(clock)
 
     const users = [
         {
             name: "Özlem",
-            role: "Scrum Master"
+            role: "Scrum Master",
+            src: "./özlem.png"
         },
         {
             name: "İlker",
-            role: "Product Owner"
+            role: "Product Owner",
+            src: "./ilker.png"
         },
         {
             name: "Sema",
-            role: "Business analytics"
+            role: "Business analytics",
+            src: "./sema.png"
         },
         {
+            
             name: "Göksel",
-            role: "Developer"
+            role: "Developer",
+            src: "./goksel.png"
         },
     ]
 
@@ -79,7 +98,7 @@ const CreateRetroSSC = () => {
         let usercards = []
 
         for (let index = 0; index < users.length; index++) {
-            usercards.push(<UserCard name={users[index].name} role={users[index].role}/>)
+            usercards.push(<UserCard name={users[index].name} role={users[index].role} src={users[index].src}/>)
         }
 
         return usercards
@@ -90,18 +109,19 @@ const CreateRetroSSC = () => {
             
             <div className="retro-navbar">
                 <img src={logo} alt="Logo" width="300px" />
-                <Timer />
+                <Timer clock = {clock}/>
             </div>
 
             <div className="main-wrapper">
                 <div className="aside">
                     <div className="aside-top">
                         <div>
-                            <img src={team} alt="Team" />
+                            <img src={ıs} alt="Team" />
                         </div>
                         <div className="aside-top-right">
                             <div>Takım</div>
-                            <div>INTERN</div>
+                            <div>StajGrup2</div>
+        
                         </div>
                     </div>
                  
@@ -181,18 +201,20 @@ const CreateRetroSSC = () => {
                 <div className= "lala">
         <div className="bottom-bar">
             <div className="icons">
-                <span>a</span>
-                <span>b</span>
-                <span>c</span>
+                <img className = "icon1" src={icon1} alt="icon" />
+                <img className = "icon2" src={icon2} alt="icon"/>
+                <img className = "icon3" src={icon3} alt="icon" onClick={() => startTime()}/>
+                
+                
             </div>
-            <div className="menu">
+            <div className="menu2">
                 <span>Düşün</span>
                 <span>Grup</span>
                 <span>Oyla</span>
                 <span>Tartış</span>
-                <Link to= "">
+                
                 <span onClick={() => saveRetro()}>Kapat</span>
-                </Link>
+                
             </div>
         </div>
     <div className="info-button2 scale" onClick={() => saveRetro()}>
