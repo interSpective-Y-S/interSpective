@@ -1,9 +1,9 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 import '../../assets/css/maincard.css'
 import EditCard from './EditCard'
 import RetroCard from './RetroCard'
 
-const MainCard = ({title, text, color}) => {
+const MainCard = ({title, text, color, notes, saveNote, deleteNote}) => {
 
     const [names, setNames] = useState(["Intertech 1", "Intertech 2", "Intertech 3"])
     const [ length, setLength] = useState(names.length)
@@ -12,13 +12,11 @@ const MainCard = ({title, text, color}) => {
     const deleteItem = (index) => (e) => {
         setNames(names.filter((item,index2) => index !== index2))
     }
-
-
+console.log(notes)
     const saveItem = (value, index) => (e) => {
 
-        setNames([...names, value])
-
-        setLength(length+1)
+        //setNames([...names, value])
+saveNote(value);
         setEditText(editText-1)
     }
 
@@ -47,7 +45,7 @@ const MainCard = ({title, text, color}) => {
             </div>
             <div onClick={createClick()} className={"main-card-button scale " + (editText !== 0 ? "disable-button" : "")}>Not Yarat</div>
             <div className="main-card-list">
-                {names.map((item, index) => <RetroCard text={names[index]} index={index} deleteItem={deleteItem} color={color} />)}
+                {notes && notes.length > 0 && notes.map((item, index) => <RetroCard text={notes[index]} index={index} deleteItem={(index) => deleteNote(index)} color={color} />)}
                 {editComponent()}
             </div>
         </div>

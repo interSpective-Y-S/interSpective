@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect, useState} from 'react'
 import logo from '../../assets/images/logo.png'
 import mail from '../../assets/images/mail.png'
 import link from '../../assets/images/link.png'
@@ -10,6 +10,47 @@ import Timer from './Timer'
 
 const CreateRetroLC = () => {
 
+    const [retro, setRetro] = useState({})
+    const [sadList, setSadList] = useState([])
+    const [madList, setMadList] = useState([])
+    const [gladList, setGladList] = useState([])
+
+    useEffect(() => {
+        const fetchData = async () => {
+            var response = await fetch("http://localhost:8080/madsadglad/5")
+            var data = await response.json();
+                console.log("aaaa",data)
+            setRetro(data);  
+            setGladList(data.gladList)    
+            setMadList(data.madList)    
+            setSadList(data.sadList)    
+        };
+
+        fetchData();
+        
+    },[]);
+
+    const saveRetro = () => {
+        var data = {
+            madList : madList,
+            sadList : sadList,
+            gladList : gladList,
+            actionList : retro.actionList,
+            rate : retro.rate,
+            notes : retro.notes
+        }
+        const putMethod = {
+            method: 'PUT',
+            headers: {
+                'Content-Type': 'application/json; charset=UTF-8'
+            },
+            body: JSON.stringify(data)
+        }
+        fetch("http://localhost:8080/madsadglad/5",putMethod)
+        .then(response => response.json)
+        .then(dat => console.log(dat))
+
+    }
     const users = [
         {
             name: "Ahmet",
@@ -92,22 +133,51 @@ const CreateRetroLC = () => {
                 </div>
                 <div className="main-content">
                     <MainCard 
-                        title="To Do"
+                        title="Yapılacak"
                         text="Henüz başlatılmamış ancak ekibinizin performansı üzerinde olumlu bir etkisi olması muhtemel fikirler hakkında buraya notlar ekleyin."
-                        color="#fce7f6" />
+                        color="#fce7f6"
+                        notes={madList}
+                            saveNote={(mad) => {
+                                setMadList([...madList, mad])
+                            }}
+                            
+                         deleteNote={(index)=> {
+                            setMadList(madList.filter((item,index2) => index !== index2))
+                         }}
+                         />
 
                     <MainCard
-                        title="Doing"
+                        title="Yapılıyor"
                         text="Devam eden ve ekibinizin performansı üzerinde olumlu etkisi olabilecek fikirler hakkında buraya notlar ekleyin."
-                        color="#60c9e5" />
+                        color="#60c9e5"
+                        notes={sadList}
+                        saveNote={(sad) => {
+                                setSadList([...sadList, sad])
+                            }}
+                            
+                         deleteNote={(index)=> {
+                            setSadList(sadList.filter((item,index2) => index !== index2))
+                         }}
+                         />
 
                     <MainCard
-                        title="Done"
+                        title="Yapılan"
                         text="Devam eden ve ekibinizin performansı üzerinde olumlu etkisi olabilecek fikirler hakkında buraya notlar ekleyin."
-                        color="#63e3aa" />
+                        color="#63e3aa" 
+                        notes={gladList}
+                        saveNote={(glad) => {
+                                setGladList([...gladList, glad])
+                            }}
+                            
+                         deleteNote={(index)=> {
+                            setGladList(gladList.filter((item,index2) => index !== index2))
+                         }}
+                        />
                 </div>
             </div>
-
+            <div onClick={() => saveRetro()}>
+                kayıttttttttttt!
+            </div>
         </div>
     )
 }

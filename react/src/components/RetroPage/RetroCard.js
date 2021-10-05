@@ -5,7 +5,7 @@ const RetroCard = ({text, index, deleteItem, color}) => {
     return (
         <div className="card-wrapper expand" style={{ backgroundColor: color }}>
             <div>{text}</div>
-            <img onClick={deleteItem(index)} src={deleteIcon} alt="delete" />
+            <img onClick={() => deleteItem(index)} src={deleteIcon} alt="delete" />
         </div>
     )
 }

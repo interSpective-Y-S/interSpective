@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect, useState} from 'react'
 import logo from '../../assets/images/logo.png'
 import mail from '../../assets/images/mail.png'
 import link from '../../assets/images/link.png'
@@ -9,6 +9,49 @@ import MainCard from './MainCard'
 import Timer from './Timer'
 
 const CreateRetroWWW = () => {
+
+    const [retro, setRetro] = useState({})
+    const [sadList, setSadList] = useState([])
+    const [madList, setMadList] = useState([])
+    const [gladList, setGladList] = useState([])
+
+    useEffect(() => {
+        const fetchData = async () => {
+            var response = await fetch("http://localhost:8080/madsadglad/6")
+            var data = await response.json();
+                console.log("aaaa",data)
+            setRetro(data);  
+            setGladList(data.gladList)    
+            setMadList(data.madList)    
+            setSadList(data.sadList)    
+        };
+
+        fetchData();
+        
+    },[]);
+
+    const saveRetro = () => {
+        var data = {
+            madList : madList,
+            sadList : sadList,
+            gladList : gladList,
+            actionList : retro.actionList,
+            rate : retro.rate,
+            notes : retro.notes
+        }
+        const putMethod = {
+            method: 'PUT',
+            headers: {
+                'Content-Type': 'application/json; charset=UTF-8'
+            },
+            body: JSON.stringify(data)
+        }
+        fetch("http://localhost:8080/madsadglad/6",putMethod)
+        .then(response => response.json)
+        .then(dat => console.log(dat))
+
+    }
+
 
     const users = [
         {
@@ -92,17 +135,38 @@ const CreateRetroWWW = () => {
                 </div>
                 <div className="main-content-www">
                     <MainCard 
-                        title="Went Well"
+                        title="İyiydi"
                         text="Son iterasyonda iyi giden şeyler hakkında notlar ekleyin."
-                        color="#63e3aa" />
+                        color="#63e3aa" 
+                        notes={gladList}
+                        saveNote={(glad) => {
+                                setGladList([...gladList, glad])
+                            }}
+                            
+                         deleteNote={(index)=> {
+                            setGladList(gladList.filter((item,index2) => index !== index2))
+                         }}
+
+                        />
 
                     <MainCard
-                        title="Didn't Went Well"
+                        title="Kötüydü"
                         text="Son iterasyonda iyi gitmeyen şeyler hakkında notlar ekleyin."
-                        color="#fce7f6" />
+                        color="#fce7f6" 
+                        notes={sadList}
+                        saveNote={(sad) => {
+                                setSadList([...sadList, sad])
+                            }}
+                            
+                         deleteNote={(index)=> {
+                            setSadList(sadList.filter((item,index2) => index !== index2))
+                         }}
+                        />
                 </div>
             </div>
-
+            <div onClick={() => saveRetro()}>
+                kayıttttttttttt!
+            </div>
         </div>
     )
 }
