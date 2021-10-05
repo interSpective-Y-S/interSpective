@@ -7,6 +7,7 @@ import '../../assets/css/createretro.css'
 import UserCard from './UserCard'
 import MainCard from './MainCard'
 import Timer from './Timer'
+import { Link } from 'react-router-dom'
 
 const CreateRetroLC = () => {
 
@@ -127,6 +128,7 @@ const CreateRetroLC = () => {
                         </div>
                     </div>
                 </div>
+                <div>
                 <div className="main-content">
                     <MainCard 
                         title="Yapılacak"
@@ -170,9 +172,29 @@ const CreateRetroLC = () => {
                          }}
                         />
                 </div>
+                <div className= "lala">
+        <div className="bottom-bar">
+            <div className="icons">
+                <span>a</span>
+                <span>b</span>
+                <span>c</span>
             </div>
-            <div onClick={() => saveRetro()}>
-                kayıttttttttttt!
+            <div className="menu">
+                <span>Düşün</span>
+                <span>Grup</span>
+                <span>Oyla</span>
+                <span>Tartış</span>
+                <Link to= "">
+                <span onClick={() => saveRetro()}>Kapat</span>
+                </Link>
+            </div>
+        </div>
+    <div className="info-button2 scale" onClick={() => saveRetro()}>
+        <span>Güncelle !</span>
+    </div>
+    </div>
+                
+                </div>
             </div>
         </div>
     )

@@ -1,4 +1,5 @@
 import React, {useEffect, useState} from 'react'
+import { Link } from 'react-router-dom'
 import logo from '../../assets/images/logo.png'
 import mail from '../../assets/images/mail.png'
 import link from '../../assets/images/link.png'
@@ -7,6 +8,9 @@ import '../../assets/css/createretro.css'
 import UserCard from './UserCard'
 import MainCard from './MainCard'
 import Timer from './Timer'
+import '../../assets/css/info.css'
+import NavBottom from '../NavBottom'
+
 
 const CreateRetroSSC = () => {
 
@@ -49,7 +53,6 @@ const CreateRetroSSC = () => {
         fetch("http://localhost:8080/madsadglad/4",putMethod)
         .then(response => response.json)
         .then(dat => console.log(dat))
-
     }
 
 
@@ -129,7 +132,8 @@ const CreateRetroSSC = () => {
                         </div>
                     </div>
                 </div>
-                <div className="main-content">
+                <div >
+                    <div className="main-content">
                     <MainCard 
                         title="Başla"
                         text="Henüz uygulanmamış olan, ekip üzerinde olumlu bir etkisi olacak şeyler hakkında notlar ekleyin. "
@@ -172,11 +176,34 @@ const CreateRetroSSC = () => {
                          }}
                          />
                 </div>
+                
+                
+                <div className= "lala">
+        <div className="bottom-bar">
+            <div className="icons">
+                <span>a</span>
+                <span>b</span>
+                <span>c</span>
             </div>
-            <div onClick={() => saveRetro()}>
-                kayıttttttttttt!
+            <div className="menu">
+                <span>Düşün</span>
+                <span>Grup</span>
+                <span>Oyla</span>
+                <span>Tartış</span>
+                <Link to= "">
+                <span onClick={() => saveRetro()}>Kapat</span>
+                </Link>
             </div>
         </div>
+    <div className="info-button2 scale" onClick={() => saveRetro()}>
+        <span>Güncelle !</span>
+    </div>
+    </div>
+                
+                </div>
+            </div>
+        </div>
+        
     )
 }
 

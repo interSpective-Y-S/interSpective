@@ -1,9 +1,9 @@
 .urunler-container{
     min-height: 100vh;
     background-image: url('../images/urunler.png');
-    background-size: 70%;
+    background-size: 75%;
     background-repeat: no-repeat;
-    background-position: 630px -120px;
+    background-position: 690px -230px;
 }
 
 .urunler-content{

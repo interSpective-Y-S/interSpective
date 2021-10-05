@@ -205,6 +205,20 @@
     box-shadow: 0 2px 7px rgba(0, 0, 0, 0.6);
 }
 
+.info-button2{
+    color: #fdfcfb;
+    text-align: center;
+    padding: 15px;
+    width: 140px;
+    height: 25px;
+    border-radius: 10px;
+    background-color: #f1a501;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+    box-shadow: 0 2px 7px rgba(0, 0, 0, 0.6);
+}
 
 .left-bot-www{
     margin-left: 140px;
@@ -233,4 +247,40 @@
 .info-right-trans img{
     width: 549.5px;
     height: 500px;
+}
+
+.bottom-bar{
+    display: flex;
+    gap: 20px;
+    background-color: #63e3aa;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 20px 8px;
+    z-index: 5;
+    width: 500px;
+    margin-left: 480px;
+    border-radius:2ch;   
+    box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.4);
+}
+
+
+.icons span{
+    margin-left: 10px;
+}
+
+.menu{
+    z-index: 5;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    font-size: 18px;
+    color: #030824;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.lala{
+    display: flex;
+    flex-direction: row;
+    gap:20px;
 }
