@@ -10,12 +10,11 @@ import team from '../../assets/images/team.png'
 import ıs from '../../assets/images/ıs.png'
 import '../../assets/css/createretro.css'
 import UserCard from './UserCard'
+import Aksiyon from '../Aksiyon'
 import MainCard from './MainCard'
 import Timer from './Timer'
 import '../../assets/css/info.css'
 import NavBottom from '../NavBottom'
-
-
 
 
 
@@ -83,13 +82,13 @@ const CreateRetroSSC = () => {
         },
         {
             name: "Sema",
-            role: "Business analytics",
+            role: "Business Analytics",
             src: "./sema.png"
         },
         {
             
             name: "Göksel",
-            role: "Developer",
+            role: "Data Scientist",
             src: "./goksel.png"
         },
     ]
@@ -109,9 +108,10 @@ const CreateRetroSSC = () => {
             
             <div className="retro-navbar">
                 <img src={logo} alt="Logo" width="300px" />
-                <Timer clock = {clock}/>
+                <Aksiyon />
+                
             </div>
-
+            
             <div className="main-wrapper">
                 <div className="aside">
                     <div className="aside-top">

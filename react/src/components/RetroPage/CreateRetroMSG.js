@@ -74,13 +74,13 @@ const CreateRetroMSG = () => {
         },
         {
             name: "Sema",
-            role: "Business analytics",
+            role: "Business Analytics",
             src: "./sema.png"
         },
         {
             
             name: "Göksel",
-            role: "Developer",
+            role: "Data Scientist",
             src: "./goksel.png"
         },
     ]
@@ -197,14 +197,14 @@ const CreateRetroMSG = () => {
                 <img className = "icon3" src={icon3} alt="icon" onClick={() => startTime()}/>
                 
             </div>
-            <div className="menu">
+            <div className="menu2">
                 <span>Düşün</span>
                 <span>Grup</span>
                 <span>Oyla</span>
                 <span>Tartış</span>
-                <Link to= "">
+                
                 <span onClick={() => saveRetro()}>Kapat</span>
-                </Link>
+                
             </div>
         </div>
     <div className="info-button2 scale" onClick={() => saveRetro()}>

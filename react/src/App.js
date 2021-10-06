@@ -14,6 +14,7 @@ import CreateRetroLC from './components/RetroPage/CreateRetroLC'
 import CreateRetroMSG from './components/RetroPage/CreateRetroMSG'
 import CreateRetroWWW from './components/RetroPage/CreateRetroWWW'
 import RetroChoose from './components/RetroChoose'
+import Aksiyon from './components/Aksiyon'
 import RetroChooseSSC from './components/RetroChooseSSC'
 import RetroChooseWWW from './components/RetroChooseWWW'
 import RetroChooseMSG from './components/RetroChooseMSG'
@@ -64,6 +65,7 @@ function App() {
     
     <Route path="/info-what-went-well" component={WhatWentWell} />
 
+    <Route path="/aksiyon" component={Aksiyon} />
     
     </Router>
 
