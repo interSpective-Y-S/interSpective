@@ -11,7 +11,7 @@ const EditCard = ({saveItem, index, color}) => {
             <div>
                 <input className="add-retro" type="text" onChange={ (e) => setValue(e.target.value)} />
             </div>
-            <img height="32px" onClick={saveItem(value, index)} src={saveIcon} alt="save" />
+            <img className="save scale" height="32px" onClick={saveItem(value, index)} src={saveIcon} alt="save" />
         </div>
     )
 }

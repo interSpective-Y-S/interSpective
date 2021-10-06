@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { OffCanvas, OffCanvasMenu, OffCanvasBody } from "react-offcanvas";
 import '../assets/css/aksiyon.css'
+import deleteIcon from '../assets/images/delete.svg'
 
 export default class Aksiyon extends Component {
   componentWillMount() {
@@ -20,35 +21,33 @@ export default class Aksiyon extends Component {
         position={"right"}
       >
         <OffCanvasBody
-          className=""
+          className="action-body"
            effect={"push"}
         >
          
-            <a className="lalala" onClick={this.handleClick.bind(this)}>
-                        Aksiyonlar
+            <a className="aciton-text" onClick={this.handleClick.bind(this)}>
+              Aksiyonlar
             </a>{" "}
             
           
         </OffCanvasBody>
 
-        <OffCanvasMenu className="lololo">     
-                <h5 className="offcanvas-title"  id="offcanvasExampleLabel">Aksiyon İtemları</h5>
-                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close" href="#" onClick={this.handleClick.bind(this)}>X</button>
-            
-                <div className="offcanvas-body">
-                    
-                        <div className="alert alert-success" role="alert">
-                            Yeni Aksiyonlar Alın ya da Çözülmeyen Aksiyonları Gözden Geçirin.                          
-                        </div>
-                    </div>
-
-  
+        <OffCanvasMenu className="menu-canvas">
+                <div className="top-items">   
+                  <h5 className="title">Aksiyon İtemleri</h5>
+                  <img className="x"src={deleteIcon} href="#" onClick={this.handleClick.bind(this)}/>
+                </div>  
+                <div className="body-mid">
+                  <div className="info-text" role="alert">
+                      Yeni Aksiyonlar Alın ya da Çözülmeyen Aksiyonları Gözden Geçirin.                          
+                  </div>
+                </div>
 
                   <form>
-                        <div class="input-group mb-3">
-                            <input type="text" class="form-control" placeholder="Aksiyon yaz" aria-label="Recipient's username" aria-describedby="basic-addon2"/>
-                            <div class="input-group-append">
-                              <button class="btn btn-danger" type="button">Aksiyon Ekle</button>
+                        <div className="form">
+                            <input type="text" className="input-text" placeholder="Aksiyon yaz" aria-label="Recipient's username" aria-describedby="basic-addon2"/>
+                            <div className="input-btn scale">
+                              Aksiyon Ekle
                             </div>
                         </div>
                     </form>   
