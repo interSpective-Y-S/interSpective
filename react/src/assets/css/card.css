@@ -6,6 +6,7 @@
     font-size: 16px;
     justify-content: space-between;
     transition: 1s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 .card-wrapper:first-child{

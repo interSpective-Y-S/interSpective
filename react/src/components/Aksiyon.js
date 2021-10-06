@@ -35,7 +35,7 @@ export default class Aksiyon extends Component {
         <OffCanvasMenu className="menu-canvas">
                 <div className="top-items">   
                   <h5 className="title">Aksiyon İtemleri</h5>
-                  <img className="x"src={deleteIcon} href="#" onClick={this.handleClick.bind(this)}/>
+                  <img className="x scale"src={deleteIcon} href="#" onClick={this.handleClick.bind(this)}/>
                 </div>  
                 <div className="body-mid">
                   <div className="info-text" role="alert">
