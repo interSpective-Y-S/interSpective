@@ -12,6 +12,7 @@ import ıs from '../../assets/images/ıs.png'
 import icon1 from '../../assets/images/çan.png'
 import icon2 from '../../assets/images/çark.png'
 import icon3 from '../../assets/images/saat.png'
+import Aksiyon from '../Aksiyon'
 
 const CreateRetroLC = () => {
 
@@ -102,7 +103,7 @@ const CreateRetroLC = () => {
             
             <div className="retro-navbar">
                 <img src={logo} alt="Logo" width="300px" />
-                <Timer />
+                <Aksiyon />
             </div>
 
             <div className="main-wrapper">
